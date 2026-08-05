@@ -1,0 +1,6 @@
+a = input()
+b = input()
+c = input()
+print(pow(int(a), int(b)))
+print(pow(int(a), int(b), int(c)))
+
