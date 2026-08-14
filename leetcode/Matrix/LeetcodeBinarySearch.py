@@ -13,6 +13,9 @@ class Solution:
         else:
             return -1
     def search1(self, nums, t):
+        """
+        time kompleksitiy o(n log n)
+        """
         L = 0
         R = len(nums) - 1
         while L <= R:
