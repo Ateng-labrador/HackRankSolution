@@ -11,7 +11,7 @@ class Solution1:
     def sumOfRowCol(self, mat):
         resf = self.summat(mat)
         for i in range(len(mat)-1):
-            if resf[i] != resf[i + 1]:
+            if resf[i] != resf[i + 1]:  
                 return False
         return True
                 
