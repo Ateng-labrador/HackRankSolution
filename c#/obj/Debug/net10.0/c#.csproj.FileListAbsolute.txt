@@ -1,0 +1,15 @@
+E:\HackRank\c#\bin\Debug\net10.0\c#.exe
+E:\HackRank\c#\bin\Debug\net10.0\c#.deps.json
+E:\HackRank\c#\bin\Debug\net10.0\c#.runtimeconfig.json
+E:\HackRank\c#\bin\Debug\net10.0\c#.dll
+E:\HackRank\c#\bin\Debug\net10.0\c#.pdb
+E:\HackRank\c#\obj\Debug\net10.0\c#.GeneratedMSBuildEditorConfig.editorconfig
+E:\HackRank\c#\obj\Debug\net10.0\c#.AssemblyInfoInputs.cache
+E:\HackRank\c#\obj\Debug\net10.0\c#.AssemblyInfo.cs
+E:\HackRank\c#\obj\Debug\net10.0\c#.csproj.CoreCompileInputs.cache
+E:\HackRank\c#\obj\Debug\net10.0\c#.sourcelink.json
+E:\HackRank\c#\obj\Debug\net10.0\c#.dll
+E:\HackRank\c#\obj\Debug\net10.0\refint\c#.dll
+E:\HackRank\c#\obj\Debug\net10.0\c#.pdb
+E:\HackRank\c#\obj\Debug\net10.0\c#.genruntimeconfig.cache
+E:\HackRank\c#\obj\Debug\net10.0\ref\c#.dll
