@@ -1,6 +1,3 @@
-
-using System.ComponentModel;
-
 /// <summary>
 /// Sorting Algorithm
 /// 
@@ -61,5 +58,11 @@ public class SortingAlgorithm
             }
             n = newn; 
         }
+        Console.WriteLine(A);
+    }
+
+    public static void mergeSwap()
+    {
+        
     }
 }
