@@ -1,22 +1,40 @@
-public class leetcode2824
-{
-    public static int solution(int[] arr, int t)
-    {
-        Array.Sort(arr);
-        int L = 0;
-        int R = arr.Length - 1;
-        int res = 0;
+using System.Linq;
+using System.Collections.Generic;
 
-        while(L < R)
+public class Solution
+{
+    public int CountPairs(IList<int> nums, int target)
+    {
+        nums = nums.OrderBy(n => n).ToList();
+        int L = 0;
+        int R = nums.Count - 1;
+        int res = 0;
+        while (L < R)
         {
-            if(arr[L] + arr[R] < t)
+            if (nums[L] + nums[R] < target)
             {
                 res += (R - L);
-                L++;
+                L += 1;
             }
             else
             {
-                R--;
+                R -= 1;
+            }
+        }
+        return res;
+    }
+
+    public int CountPairs1(IList<int> nums, int target)
+    {
+        int res = 0;
+        for (int i = 0; i < nums.Count - 1; i++)
+        {
+            for(int j = i + 1; j < nums.Count; j++)
+            {
+                if(nums[i] + nums[j] < target)
+                {
+                    res++;
+                }
             }
         }
         return res;
