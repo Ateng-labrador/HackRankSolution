@@ -74,6 +74,43 @@ Implementasi:
     }
     ```
 
+**Deklarasi Matriks**
+
+
+
+
+- menggunakan List
+Wajib
+```
+using System;
+using System.Collections.Generic;
+```
+
+```
+List<List<int>> A1 = new List<List<int>>()
+{
+    new List<int> {1, 3, 1},
+    new List<int> {1, 0, 0}
+};
+```
+
+- deklarasi biasa
+```
+int[][] A = new int[][]
+{
+    new int[] {1, 2, 3},
+    new int[] {1, 0, 0}
+};
+```
+
+Cetak matriks
+```
+foreach (var item in x)
+{
+    Console.WriteLine(string.Join(" ", item));
+}
+```
+
 
 
 
