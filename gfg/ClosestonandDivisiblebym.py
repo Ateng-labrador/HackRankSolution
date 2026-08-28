@@ -1,6 +1,6 @@
 # skip
 
-class Solution:
+class Solution1:
     def closestNumber(self, n, m):
         q = n // m
         n1 = m * q
@@ -18,3 +18,8 @@ class Solution:
                 return n1
             else:
                 return n2
+
+class Solution:
+    def closestNumber(self, n, m):
+        pass
+

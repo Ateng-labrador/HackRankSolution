@@ -17,7 +17,6 @@ class Solution:
 
                         
 
-
 mesin_hitung = Solution()
 arr1 = [1, 5, 1, 0, 6, 0]
 x1 = 7
