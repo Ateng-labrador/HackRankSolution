@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\HackRank\\c#\\c#.csproj": {}
+    "C:\\HackRank\\HackRankSolution\\c#\\c#.csproj": {}
   },
   "projects": {
-    "E:\\HackRank\\c#\\c#.csproj": {
+    "C:\\HackRank\\HackRankSolution\\c#\\c#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\HackRank\\c#\\c#.csproj",
+        "projectUniqueName": "C:\\HackRank\\HackRankSolution\\c#\\c#.csproj",
         "projectName": "c#",
-        "projectPath": "E:\\HackRank\\c#\\c#.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\HackRank\\c#\\obj\\",
+        "projectPath": "C:\\HackRank\\HackRankSolution\\c#\\c#.csproj",
+        "packagesPath": "C:\\Users\\Hype\\.nuget\\packages\\",
+        "outputPath": "C:\\HackRank\\HackRankSolution\\c#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Hype\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
