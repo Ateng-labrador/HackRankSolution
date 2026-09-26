@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HackRank\\HackRankSolution\\c#\\c#.csproj",
+      "projectUniqueName": "C:\\AlgoExersice\\HackRankSolution\\c#\\c#.csproj",
       "projectName": "c#",
-      "projectPath": "C:\\HackRank\\HackRankSolution\\c#\\c#.csproj",
+      "projectPath": "C:\\AlgoExersice\\HackRankSolution\\c#\\c#.csproj",
       "packagesPath": "C:\\Users\\Hype\\.nuget\\packages\\",
-      "outputPath": "C:\\HackRank\\HackRankSolution\\c#\\obj\\",
+      "outputPath": "C:\\AlgoExersice\\HackRankSolution\\c#\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hype\\AppData\\Roaming\\NuGet\\NuGet.Config"
