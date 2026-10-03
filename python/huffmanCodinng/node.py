@@ -31,29 +31,47 @@ class node:
         return self.next
 
     def setValue(self,value):
-        self.value = value
+        self.value = value 
 
     def setNext(self, next):
         self.next = next
 
-class NodeMath:
+class NodePolynomial:
     def __init__(self, coeff, exp, next_node=None):
         self.coeff = coeff
         self.exp = exp
         self.next = next_node
 
-    def __str__(self):
-        pass
+# Child Class
+class PrintPolynomial(NodePolynomial):
+    def __init__(self, coeff, exp, next_node=None):
+        super().__init__(coeff, exp, next_node)
 
-    def __init__(self, name, bases, dict, /, **kwds):
-        pass
+    def traverse_chain(self):
+        current = self
+        persamaan = []
 
-    def __add__(self, other):
-        pass
+        while current:
+            if current.exp == 0:
+                persamaan.append(f"{current.coeff}")
+            else:
+                persamaan.append(f"{current.coeff}x^{current.exp}")
+            current = current.next
+        print(" + ".join(persamaan))
 
 
 
-first = node(3, None)
-second = node(4, first)
-# the mean get the new next value
-print(second.getNext().getValue())
+# make equation: 3x^3 + 5x^2 + 2
+term3 = PrintPolynomial(coeff=2, exp=0)
+term2 = PrintPolynomial(coeff=5, exp=1, next_node=term3)
+term1 = PrintPolynomial(coeff=3, exp=3, next_node=term2)
+
+term1.traverse_chain()
+
+
+
+
+# first = node(3, None)
+# second = node(4, first)
+# # the mean get the new next value
+# print(second.getNext().getValue())
