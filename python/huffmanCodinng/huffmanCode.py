@@ -67,9 +67,80 @@ def huffman_code(text):
 
 
 # Menggunakan Array
+def huffman_code_array(text):
+    if not text:
+        return {}
+
+    freq = {}
+    for char in text:
+        freq[char] = freq.get(char, 0) + 1
+
+    if len(freq) == 1:
+        return {list(freq.keys())[0]: "0"}
+
+    symbols = sorted(freq.keys(), key=lambda c: freq[c])
+    n = len(symbols)
+
+    A = [freq[s] for s in symbols] + [0] * n
+
+    leaf_ptr = 0
+    root_ptr = 0
+
+    # node 1
+    for i in range(n, 2 * n - 1):
+        if leaf_ptr < n and (root_ptr >= i - n or A[leaf_ptr] < A[n + root_ptr]):
+            w1 = A[leaf_ptr]
+            A[leaf_ptr] = i # Simpan indeks parent
+            leaf_ptr += 1
+        else:
+            w1 = A[n + root_ptr]
+            A[n + root_ptr] = i
+            root_ptr += 1
+
+    # node 2
+        if leaf_ptr < n and (root_ptr >= i - n or A[leaf_ptr] < A[n + root_ptr]):
+            w2 = A[leaf_ptr]
+            A[leaf_ptr] = i
+            leaf_ptr += 1
+        else:
+            w2 = A[n + root_ptr]
+            A[n + root_ptr] = i
+            root_ptr += 1
+        A[i] = w1 + w2
+
+    A[2 * n - 2] = 0
+
+    lengths = []
+    for i in range(n):
+        depth = 0
+        curr = i
+        while curr != 2 * n - 2:
+            curr = A[curr]
+            depth += 1
+        lengths.append(depth)
+
+    symbol_lengths = list(zip(symbols, lengths))
+    symbol_lengths.sort(key=lambda x: (x[1], x[0]))
+
+    codes = {}
+    current_code = 0
+    previous_length = 0
+
+    for sym, length in symbol_lengths:
+        if length > previous_length:
+            current_code <<= (length - previous_length)
+            previous_length = length
+
+        codes[sym] = format(current_code, f'0{length}b')
+        current_code += 1
+    return codes
 
 
 x = "khansa"
-code = huffman_code(x)
-print(code)
+# code = huffman_code(x)
+# print(code)
+
+# print(huffman_code(x))
+print(huffman_code_array(x))
+
 
